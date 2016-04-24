@@ -45,6 +45,7 @@ $$f(x_k+\delta)\approx f(x_k)+f^{'}(x_k)\delta +\frac{f^{''}(x_k)}{2}\delta^{2} 
 
 $$f(x_k+\delta)\approx f(x_k)+\triangledown ^{T} f(x_k)\delta+\frac{1}{2}\delta^{T} \triangledown^{2}f(x_k)\delta \tag{2}$$
 ## 极值点判断
+当$$f^{'}(x)=0$$,点x为函数驻点。
 
 
 
