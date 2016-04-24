@@ -9,18 +9,24 @@ $$b \notin C(A)$$
 $$min_{x_1,x_2}=(x_1+2x_2-0)^2+(2x_1+x_2-1)^2+(3x_1+2x_2-1)^2$$
 
 可以解得最小值为0.038
+
+
 ## 导数
-![](x^3.svg)
+对于$$f(x)=x^3,$$点（0，0）处为拐点，当$$f^{'}(x)=0,f(x)不增大也不减小$$,
 ###一阶导数和梯度
 $$f^{'}(x)$$
 
-$$\triangledown f(x)=\left [ \frac{\partial f(x)}{\partial x_1}\right ]$$
+$$\triangledown f(x)=\left [ \begin{matrix} \frac{\partial f(x)}{\partial x_1}\\
+\frac{\partial f(x)}{\partial x_2}\\
+\vdots \\
+\frac{\partial f(x)}{\partial x_n}\\
+\end{matrix}\right ]$$
 ###二阶导数和Hessian矩阵
 $$f^{''}(x)$$
 
 $$H(x)=\triangledown ^{2} f(x) =\left[ \begin{matrix}    \frac{\partial ^{2} f(x)}{\partial x_1^{2}} & \frac{\partial ^{2} f(x)}{\partial x_1 x_2} & \dots & \frac{\partial ^{2} f(x)}{\partial x_1 x_n} \\
 \frac{\partial ^{2} f(x)}{\partial x_2 x_1} & \frac{\partial ^{2} f(x)}{\partial x_2^{2}} & \dots & \frac{\partial ^{2} f(x)}{\partial x_2 x_n} \\
-\dots &\dots &\dots &\dots \\
+\dots &\dots &\ddots &\vdots \\
 \frac{\partial ^{2} f(x)}{\partial x_1^{2}} & \frac{\partial ^{2} f(x)}{\partial x_1 x_2} & \dots & \frac{\partial ^{2} f(x)}{\partial x_n ^{2}} \end{matrix} \right]$$
 
 | 数学名词 | 符号 | 解析 |
@@ -30,8 +36,6 @@ $$H(x)=\triangledown ^{2} f(x) =\left[ \begin{matrix}    \frac{\partial ^{2} f(x
 | 负定 | $$\prec$$ | 特征值小于0 |
 |定 | 无 | 特征值有正有负 |
 
-
-Hessian矩阵
 ##泰勒展开
 **标量泰勒展开式**
 
@@ -40,6 +44,10 @@ $$f(x_k+\delta)\approx f(x_k)+f^{'}(x_k)\delta +\frac{f^{''}(x_k)}{2}\delta^{2} 
 **矢量泰勒展开式**
 
 $$f(x_k+\delta)\approx f(x_k)+\triangledown ^{T} f(x_k)\delta+\frac{1}{2}\delta^{T} \triangledown^{2}f(x_k)\delta \tag{2}$$
+## 极值点判断
+
+
+
 
 ##梯度下降
 梯度下降只考虑一阶导数，即：$$f(x_k+\delta)\approx f(x_k)+\triangledown ^{T} f(x_k)\delta$$
