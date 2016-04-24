@@ -45,9 +45,11 @@ $$f(x_k+\delta)\approx f(x_k)+f^{'}(x_k)\delta +\frac{f^{''}(x_k)}{2}\delta^{2} 
 
 $$f(x_k+\delta)\approx f(x_k)+\triangledown ^{T} f(x_k)\delta+\frac{1}{2}\delta^{T} \triangledown^{2}f(x_k)\delta \tag{2}$$
 ## 极值点判断
-当$$f^{'}(x)=0$$,点x为函数驻点。
+对于一元函数来说，当$$f^{'}(x)=0$$,点x为函数驻点。
 
-
+$$
+f^{''}(x)=\begin{cases} > 0,\quad x点为极小值点\\<0,\quad x为极大值点\\=0,\quad 不能判断\end{cases}
+$$可利用公式(1)来判断，忽略掉二阶导数，当时，即，在邻域内，同样可得极大值点，而，则不能判断。
 
 
 ##梯度下降
